@@ -13,7 +13,7 @@ pipelines/logMultiscale*.o*
 intermediate/*
 output/*
 input/*.txt*
-input/nonpublicData
+*nonpublic*
 *SourceEvents.txt
 *Randomized.txt
 
