@@ -1,0 +1,18 @@
+#!/bin/bash -l
+# PBS -l nodes=1:ppn=24,walltime=23:59:00
+#PBS -l nodes=1:ppn=4,walltime=23:59:00
+#PBS -N logMultiscaleEvaluateRandomWSource
+
+PROJECTPATH="/home/hpc/capn/mpp460/woodyhome/projects/multiscale/"
+echo "PROJECTPATH: $PROJECTPATH"
+
+cd ${PROJECTPATH}
+# time ./bin/evaluateRandomWithSource --input ./input/eventsBackup.txt --dec 70.0 --ra 35.0 --radius 10.0 --decsize 10.0 --number 400
+# time ./bin/evaluateRandomWithSource --input ./input/eventsBackup.txt --dec 15.0 --ra 260.0 --radius 10.0 --decsize 10.0 --number 500
+# time ./bin/evaluateRandomWithSource --input ./input/eventsBackup.txt --dec 25.0 --ra 260.0 --radius 4.0 --decsize 8.0 --number 100
+time ./bin/evaluateRandomWithSource --input ./input/eventsBackup.txt --dec 25.0 --ra 260.0 --radius 4.0 --decsize 8.0 --number 1
+# ./bin/addSourceEvents --input ./input/events.txt --dec 25.0 --ra 260.0 --radius 1.0 --number 30                                           
+#  │··./bin/addSourceEvents --input ./input/events.txt --dec 22.5 --ra 260.0 --radius 1.0 --number 30                                           
+#  │··./bin/addSourceEvents --input ./input/events.txt --dec 22.5 --ra 255.0 --radius 1.0 --number 30
+
+exit 0

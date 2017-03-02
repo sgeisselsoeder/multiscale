@@ -1,0 +1,13 @@
+#!/bin/bash -l
+#PBS -l nodes=1:ppn=4,walltime=23:59:00
+#PBS -N logMultiscaleEvaluateRandom
+# PBS -l nodes=1:ppn=24,walltime=23:59:00
+
+#module load boost
+PROJECTPATH="/home/hpc/capn/mpp460/woodyhome/projects/multiscale/"
+echo "PROJECTPATH: $PROJECTPATH"
+
+cd ${PROJECTPATH}
+time ./bin/evaluateRandom --input ./input/events.txt
+
+exit 0
