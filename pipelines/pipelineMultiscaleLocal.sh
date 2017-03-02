@@ -1,0 +1,24 @@
+#!/bin/bash
+
+# Make sure the binaries are up-to-date
+make -C ..
+
+### Prepare the events
+inputFile=./input/IceCube_2011-2014_random_generated_dummy/randomNeutrinoCandidatesInEquatorialCoordinates.txt
+
+echo "Evaluating data from $inputfile"
+cp ../${inputFile} ../input/events.txt
+
+echo "Compute the baseline expectation and wait until it is finished"
+time ./bin/step1 --input ./input/events.txt
+
+echo "Compute pseudo experiments to (in the end) deduce the significance"
+for i in {1..20}; do echo "Iteration " $i " of 20" && ./bin/step2 --input ./input/events.txt ; done
+
+echo "Extract the distributions from the pseudo experiments"
+time ./bin/step4 
+
+echo "Process the actual data, find clusters and deduce their significance compared to pseudo experiments"
+time ./bin/step5 --input ./input/events.txt
+
+echo "Multiscale source search has finished. Thank you for your patience. You can find the results in the logfiles and in the subfolder intermediate/step5/."
