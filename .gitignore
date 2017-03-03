@@ -8,8 +8,8 @@ bin/*
 *.gcda
 *.gcno
 *.swp
-pipelines/logMultiscale*.e*
-pipelines/logMultiscale*.o*
+pipelines/log*.e*
+pipelines/log*.o*
 intermediate/*
 output/*
 input/*.txt*

@@ -1,0 +1,12 @@
+#!/bin/bash -l
+#PBS -l nodes=1:ppn=4,walltime=23:59:00
+#PBS -N logPipelMSLocal
+# PBS -l nodes=1:ppn=24,walltime=23:59:00
+
+PROJECTPATH="/home/hpc/capn/mpp460/woodyhome/projects/multiscale/pipelines/"
+echo "PROJECTPATH: $PROJECTPATH"
+
+cd ${PROJECTPATH}
+time ./pipelineMultiscaleLocal.sh
+
+exit 0
