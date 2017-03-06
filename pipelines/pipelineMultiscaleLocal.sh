@@ -13,7 +13,7 @@ echo "#### Evaluating data from" ${inputFile}
 cp ./${inputFile} ./input/events.txt
 
 echo "#### Compute the baseline expectation"
-# time ./bin/step1 --input "./input/events.txt"
+time ./bin/step1 --input "./input/events.txt"
 
 echo "#### Compute pseudo experiments to (in the end) deduce the significance"
 for i in {1..10}; do echo "#### Iteration " $i " of 10" && ./bin/step2 --input "./input/events.txt" ; done

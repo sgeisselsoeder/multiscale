@@ -3,7 +3,6 @@
 #PBS -N logMultiscaleEvaluate
 # PBS -l nodes=1:ppn=24,walltime=23:59:00
 
-#module load boost
 PROJECTPATH="/home/hpc/capn/mpp460/woodyhome/projects/multiscale/"
 echo "PROJECTPATH: $PROJECTPATH"
 
