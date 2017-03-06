@@ -1,7 +1,7 @@
 CXX      = g++
 CXXFLAGS  = -std=c++11 -Wall -Wextra -pedantic -fopenmp -Wunreachable-code # -Werror # -Weffc++
-INCFLAGS = -Iinclude -I${BOOST_INCLUDEDIR}/
-LDFLAGS = -L${LD_LIBRARY_PATH}/ -lboost_program_options
+INCFLAGS = -Iinclude -I${BOOST_INCDIR}/
+LDFLAGS = -L${BOOST_LIBDIR}/ -lboost_program_options
 
 CXXFLAGS += ${INCFLAGS}
 
