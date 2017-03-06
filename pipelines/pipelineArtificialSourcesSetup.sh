@@ -18,6 +18,3 @@ mv ./input/events.txtWithSourceEvents.txt ./input/events.txt
 ./bin/addSourceEvents --input ./input/events.txt --dec 22.5 --ra 255.0 --radius 5.0 --number 50
 mv ./input/events.txtWithSourceEvents.txt ./input/events.txt
 
-# Compute the expectation
-time ./bin/evaluateToSkymap --input ./input/events.txt
-
