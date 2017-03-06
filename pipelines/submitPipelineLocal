@@ -7,6 +7,6 @@ PROJECTPATH="/home/hpc/capn/mpp460/woodyhome/projects/multiscale/pipelines/"
 echo "PROJECTPATH: $PROJECTPATH"
 
 cd ${PROJECTPATH}
-time ./pipelineMultiscaleLocal.sh
+time ./pipelineLocalMultiscale.sh
 
 exit 0
