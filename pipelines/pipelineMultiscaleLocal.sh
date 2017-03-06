@@ -5,8 +5,6 @@ echo "#### Please make sure that you execute this pipeline scripts from within t
 	namely via ./pipelineMultiscaleLocal.sh, as the relative paths are set accordingly."
 cd ..
 
-module load boost
-
 echo "Make sure the binaries are up-to-date"
 make
 

@@ -942,7 +942,7 @@ void writeRatiosToGrid(allScales const & scales, unsigned int distanceIndex, SG:
 
 void signalFirstInternal::debugWriteRatios()
 {
-	std::cerr << " We don't write debugRatios here!" << std::endl;
+	//std::cerr << " We don't write debugRatios here anymore!" << std::endl;
 	return;
 
 	writeRatiosToGrid(ratios_, 0, grid_);
