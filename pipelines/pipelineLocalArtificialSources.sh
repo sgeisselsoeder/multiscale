@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# create/update the binaries
+make
+
 # Generate a random setup with artificial sources
 ./pipelines/setupArtificialSources.sh
 

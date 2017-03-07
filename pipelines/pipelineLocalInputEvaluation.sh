@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# create/update the binaries
+make
+
 # Compute the expectation
 time ./bin/step1 --input ./input/events.txt
 
