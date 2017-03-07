@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Make sure the binaries are up-to-date
-make
+# make
 
 ### Prepare the events
 inputFile=./input/ANTARES_2007-2012_random_generated_dummy/randomNeutrinoCandidatesInEquatorialCoordinates.txt
