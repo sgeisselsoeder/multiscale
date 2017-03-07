@@ -36,4 +36,14 @@ splot "hammerProjEquatorial.txt" w p pt 7 ps 0.06 palette notitle, "gridLines.gr
 set output "equatorialFineCoarse.pdf"
 splot "hammerProjEquatorial.txt" w p pt 7 ps 0.2 palette notitle, "gridLines.grid" w p pt 7 ps 0.001 lc rgb"grey" notitle
 
+#set output "skymapEquatorial.pdf"
+#splot "hammerProjEquatorial.txt" w p pt 7 ps 0.2 palette notitle, "gridLines.grid" w p pt 7 ps 0.001 lc rgb"grey" notitle
+
+set output "skymapEquatorialWithEvents.pdf"
+splot "hammerProjEquatorial.txt" w p pt 7 ps 0.2 palette notitle, "gridLines.grid" w p pt 7 ps 0.001 lc rgb"grey" notitle, "hammerProjEventsEquatorial.txt" w p pt 7 ps 0.001 lc rgb"white" notitle
+
+set output "eventsEquatorial.pdf"
+splot "gridLines.grid" w p pt 7 ps 0.001 lc rgb"grey" notitle, "hammerProjEventsEquatorial.txt" w p pt 7 ps 0.001 lc rgb"black" notitle
+
+
 
