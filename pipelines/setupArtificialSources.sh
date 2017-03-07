@@ -11,10 +11,10 @@ cp ${inputFile} ./input/events.txt
 ./bin/randomizeEvents --input ./input/events.txt
 mv ./input/events.txtRandomized.txt ./input/events.txt
 # Add artificial source events
-./bin/addSourceEvents --input ./input/events.txt --dec +4.0 --ra 160.0 --radius 1.0 --number 13
+./bin/addSourceEvents --input ./input/events.txt --dec +4.0 --ra 160.0 --radius 1.0 --number 18
 mv ./input/events.txtWithSourceEvents.txt ./input/events.txt
-./bin/addSourceEvents --input ./input/events.txt --dec -52.5 --ra 260.0 --radius 3.0 --number 35
+./bin/addSourceEvents --input ./input/events.txt --dec -52.5 --ra 260.0 --radius 3.0 --number 49
 mv ./input/events.txtWithSourceEvents.txt ./input/events.txt
-./bin/addSourceEvents --input ./input/events.txt --dec -22.5 --ra 55.0 --radius 5.0 --number 50
+./bin/addSourceEvents --input ./input/events.txt --dec -22.5 --ra 55.0 --radius 5.0 --number 74
 mv ./input/events.txtWithSourceEvents.txt ./input/events.txt
 

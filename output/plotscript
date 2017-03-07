@@ -29,10 +29,10 @@ set label 4 front
 
 set output "equatorialFine.pdf"
 # set cbrange [-5:43]
-set cbrange [25:130]
+set cbrange [25:110]
 splot "hammerProjEquatorial.txt" w p pt 7 ps 0.06 palette notitle, "gridLines.grid" w p pt 7 ps 0.001 lc rgb"grey" notitle
 
-unset cbrange
+# unset cbrange
 set output "equatorialFineCoarse.pdf"
 splot "hammerProjEquatorial.txt" w p pt 7 ps 0.2 palette notitle, "gridLines.grid" w p pt 7 ps 0.001 lc rgb"grey" notitle
 
